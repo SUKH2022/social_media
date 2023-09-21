@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/369860f82a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="./index.html"><img src="images/logo.png" class="logo" alt="logo image"></a>
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-rt">
+            <div class="search_box">
+                <img src="images/search.png" alt="search image">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="nav_user_icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile_main1.png" alt="profile pictue">
+            </div>
+        </div>
+        <!-- settings menu -->
+        <div class="settings_menu">
+            <div id="dark_btn">
+                <span></span>
+            </div>
+            <div class="settings_menu_inner">
+                <div class="user_profile">
+                    <img src="images/profile_main1.png" alt="image">
+                    <div>
+                        <p>Sukhpreet Saini</p>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user_profile">
+                    <img src="images/feedback.png" alt="image">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="setting_links">
+                    <img src="images/setting.png" class="settings_icon">
+                    <a href="#">Settings & Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting_links">
+                    <img src="images/help.png" class="settings_icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting_links">
+                    <img src="images/display.png" class="settings_icon">
+                    <a href="#">Display & Accessiblity <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="setting_links">
+                    <img src="images/logout.png" class="settings_icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <!-- left_sidebar -->
+        <div class="left_sidebar">
+            <div class="imp_links">
+                <a href="#"><img src="images/news.png" alt="news image">Latest News</a>
+                <a href="#"><img src="images/friends.png" alt="Friends">Friends</a>
+                <a href="#"><img src="images/group.png" alt="Group">Group</a>
+                <a href="#"><img src="images/marketplace.png" alt="news image">Marketplace</a>
+                <a href="#"><img src="images/watch.png" alt="watch">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="shortcut_links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png" alt="shortcuts image">Web Developers</a>
+                <a href="#"><img src="images/shortcut-2.png" alt="shortcuts image">Web-Design Course</a>
+                <a href="#"><img src="images/shortcut-3.png" alt="shortcuts image">Full-Stack Development</a>
+                <a href="#"><img src="images/shortcut-4.png" alt="shortcuts image">Websites Experts</a>
+            </div>
+        </div>
+        <!-- main_content -->
+        <div class="main_content">
+            <div class="story_gallery">
+                <div class="story story1">
+                    <img src="images/upload.png" alt="upload icon">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png" alt="upload icon">
+                    <p>Maria</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png" alt="upload icon">
+                    <p>Jerry</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png" alt="upload icon">
+                    <p>Elena</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png" alt="upload icon">
+                    <p>Scott</p>
+                </div>
+            </div>
+            <div class="write_post_container">
+                <div class="user_profile">
+                    <img src="images/profile_main1.png" alt="image">
+                    <div>
+                        <p>Sukhpreet Saini</p>
+                        <small>Public <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+                <div class="post_input_container">
+                    <textarea rows="3" placeholder="What's on your mind?"></textarea>
+                    <div class="add_post_links">
+                        <a href="#"><img src="images/live-video.png" alt="video image">Live Video</a>
+                        <a href="#"><img src="images/photo.png" alt="photo image">Photo / Video</a>
+                        <a href="#"><img src="images/feeling.png" alt="felling image">Felling / Activity</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+                        <img src="images/profile_main1.png" alt="image">
+                        <div>
+                            <p>Sukhpreet Saini</p>
+                            <span>April 13 2023, 8:15 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post_text"> Are you ready for the future? <span> AI technologies </span> are already
+                    transforming the way we live and work. From virtual assistants like Siri and Alexa, to self-driving
+                    cars and personalized recommendations on Netflix, AI is making our lives easier and more efficient.
+                </p>
+
+                <p class="post_text"> But AI is not just about convenience. It has the power to revolutionize industries
+                    like healthcare, finance, and transportation, making them more effective and accessible to everyone.
+                </p>
+
+                <p class="post_text"> And the best part? We're only scratching the surface of what AI can do. With
+                    continued research and development, we can unlock its full potential and create a better world for
+                    all.</p>
+
+                <p class="post_text"> So join the AI revolution and be part of shaping the future! What AI technologies
+                    are you most excited about? Let us know in the comments below. <a href="#">#future_AI</a><a
+                        href="#">#YouTube</a></p>
+                <img src="images/feed-image-6.jpg" alt="feed img 1" class="post_img">
+                <div class="post_row">
+                    <div class="activity_icon">
+                        <div><img src="images/like-blue.png" alt="like">56K</div>
+                        <div><img src="images/comments.png" alt="like">650K</div>
+                        <div><img src="images/share.png" alt="like">95M</div>
+                    </div>
+                    <div class="post_profile_icon">
+                        <img src="images/profile_main1.png" alt="main img"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+                        <img src="images/profile_main1.png" alt="image">
+                        <div>
+                            <p>Sukhpreet Saini</p>
+                            <span>April 10 2023, 11:11 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post_text"> Are you a programmer or just someone interested in coding? Whether you're a
+                    beginner or an experienced programmer, there's always something new to learn in the world of coding!
+                    With so many programming languages and frameworks available, the possibilities are endless. From web
+                    development to machine learning, the opportunities are vast and exciting.</p>
+
+                <p class="post_text"> At its core, coding is all about problem-solving and creativity. It's a
+                    challenging but rewarding skill that allows you to turn your ideas into reality. So if you're up for
+                    the challenge and want to take your skills to the next level, why not start exploring the world of
+                    coding today?</p>
+
+                <p class="post_text"> There are plenty of resources available online to get you started, including
+                    tutorials, courses, and online communities. And who knows? You might just discover your next passion
+                    along the way. So what are you waiting for? Let's start coding! <a
+                        href="#">#Coder's_of_this_era</a><a href="#"> #Tweeter</a></p>
+                <img src="images/feed-image-1.png" alt="feed img 1" class="post_img">
+                <div class="post_row">
+                    <div class="activity_icon">
+                        <div><img src="images/like-blue.png" alt="like">304K</div>
+                        <div><img src="images/comments.png" alt="like">1M</div>
+                        <div><img src="images/share.png" alt="like">65K</div>
+                    </div>
+                    <div class="post_profile_icon">
+                        <img src="images/profile_main1.png" alt="main img"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+                        <img src="images/profile_main1.png" alt="image">
+                        <div>
+                            <p>Sukhpreet Saini</p>
+                            <span>March 3 2023, 9:52 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post_text"> Hey friends and family! With the weather getting warmer, I think it's time we all
+                    got together and enjoy some quality time by the sea. How about we all gather around a bonfire and
+                    catch up on old times, share stories, sing some songs and make some s'mores? It's the perfect way to
+                    relax and have fun with the people we love. Let's make some unforgettable memories together! Who's
+                    in? Let us know in the comments below. <a href="#">#bondingwithfriends</a></p>
+                <img src="images/feed-image-2.png" alt="feed img 1" class="post_img">
+                <div class="post_row">
+                    <div class="activity_icon">
+                        <div><img src="images/like-blue.png" alt="like">112K</div>
+                        <div><img src="images/comments.png" alt="like">10K</div>
+                        <div><img src="images/share.png" alt="like">9K</div>
+                    </div>
+                    <div class="post_profile_icon">
+                        <img src="images/profile_main1.png" alt="main img"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+                        <img src="images/profile_main1.png" alt="image">
+                        <div>
+                            <p>Sukhpreet Saini</p>
+                            <span>February 28 2023, 3:48 pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post_text"> <span> Hey everyone! 🎉 </span> Being in university can be a lot of hard work, but
+                    it's also a time to make some amazing memories with friends. Here are some fun ideas to make the
+                    most of your time with friends during university:</p>
+
+                <p class="post_text"> 1️⃣ Plan a game night: Get your friends together and plan a game night with some
+                    of your favorite board games or card games. You can also play video games together and make it a fun
+                    and competitive evening.</p>
+
+                <p class="post_text"> 2️⃣ Explore the city: Take some time to explore your city and discover new places
+                    with your friends. Visit a new restaurant, check out a local museum or art gallery, or take a walk
+                    in a nearby park.</p>
+                <p class="post_text"> 3️⃣ Attend university events: Many universities host events like concerts, movie
+                    screenings, and sports games that are free or at a low cost for students. Make it a point to attend
+                    these events with your friends and have a great time.</p>
+                <p class="post_text"> 4️⃣ Organize a potluck: Have each person bring a dish or drink to share and enjoy
+                    a potluck with your friends. It's a great way to try new foods and enjoy a delicious meal together.
+                </p>
+                <p class="post_text"> 5️⃣ Take a road trip: Plan a weekend road trip with your friends to a nearby city
+                    or national park. It's a great way to bond, explore new places, and make unforgettable memories.</p>
+
+                <p class="post_text"> Remember, university is a time to learn and grow, but it's also a time to have fun
+                    and make lasting memories with your friends. So, make the most of your time with your friends and
+                    enjoy every moment! 😊👍 <a href="#">#GCSA</a><a href="#">#Instagram</a></p>
+                <img src="images/feed-image-3.png" alt="feed img 1" class="post_img">
+                <div class="post_row">
+                    <div class="activity_icon">
+                        <div><img src="images/like-blue.png" alt="like">9.3K</div>
+                        <div><img src="images/comments.png" alt="like">1M</div>
+                        <div><img src="images/share.png" alt="like">25K</div>
+                    </div>
+                    <div class="post_profile_icon">
+                        <img src="images/profile_main1.png" alt="main img"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+                        <img src="images/profile_main1.png" alt="image">
+                        <div>
+                            <p>Sukhpreet Saini</p>
+                            <span>February 25 2023, 10:25 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post_text"> Are you looking to improve your <span> study habits and make progress </span>
+                    every day? It's a great goal to have! Here are some tips to help you study effectively and grow a
+                    bit from every previous day:</p>
+
+                <p class="post_text"> Create a study schedule: A schedule can help you stay organized and manage your
+                    time effectively. Create a schedule that fits your needs and stick to it as much as possible.</p>
+                <p class="post_text"> Eliminate distractions: Find a quiet and comfortable place to study and eliminate
+                    all possible distractions such as your phone, social media, or TV.</p>
+                <p class="post_text"> Take breaks: It's important to take breaks to avoid burnout and allow your brain
+                    to rest. Take short breaks every 30-60 minutes and do something relaxing, such as taking a walk,
+                    listening to music, or talking to a friend.</p>
+                <p class="post_text"> Set achievable goals: Break down your study sessions into smaller tasks and set
+                    achievable goals for each session. This will help you stay motivated and focused.</p>
+
+                <p class="post_text"> Review regularly: Regular review is important for retention and understanding.
+                    Make sure to review your notes and material regularly, and don't wait until the last minute to
+                    study.</p>
+
+                <p class="post_text"> Remember, studying is a process, and it takes time and effort to make progress.
+                    Don't get discouraged if you don't see immediate results. Every day, try to learn something new and
+                    apply what you've learned to your next study session. With persistence and dedication, you can grow
+                    a bit from every previous day and achieve your goals. <a href="#">#tobesuccessful</a><a
+                        href="#">#instagram</a></p>
+                <img src="images/feed-image-4.png" alt="feed img 1" class="post_img">
+                <div class="post_row">
+                    <div class="activity_icon">
+                        <div><img src="images/like-blue.png" alt="like">1.1K</div>
+                        <div><img src="images/comments.png" alt="like">120K</div>
+                        <div><img src="images/share.png" alt="like">101K</div>
+                    </div>
+                    <div class="post_profile_icon">
+                        <img src="images/profile_main1.png" alt="main img"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post_container">
+                <div class="post_row">
+                    <div class="user_profile">
+                        <img src="images/profile_main1.png" alt="image">
+                        <div>
+                            <p>Sukhpreet Saini</p>
+                            <span>December 28 2022, 11:03 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post_text"> <span> Studying with a group </span> can be one of the most effective ways to
+                    learn and retain information. Not only do you have the opportunity to exchange ideas and
+                    perspectives, but you also benefit from the collective knowledge and skills of your group members.
+                </p>
+
+                <p class="post_text"> Working together as a team can also help to enhance your communication,
+                    problem-solving, and leadership skills, all of which are essential for success both in and outside
+                    of the classroom.</p>
+
+                <p class="post_text"> So why not gather a few friends or classmates and form a study group? Set aside
+                    some time each week to review and discuss course material, share study strategies, and work through
+                    challenging problems together. With the power of teamwork, you can achieve your academic goals and
+                    have fun doing it! <a href="#">#studywithfriends</a><a href="#">#YouTube</a></p>
+                <img src="images/feed-image-5.png" alt="feed img 1" class="post_img">
+                <div class="post_row">
+                    <div class="activity_icon">
+                        <div><img src="images/like-blue.png" alt="like">78K</div>
+                        <div><img src="images/comments.png" alt="like">25.8K</div>
+                        <div><img src="images/share.png" alt="like">1K</div>
+                    </div>
+                    <div class="post_profile_icon">
+                        <img src="images/profile_main1.png" alt="main img"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load_more_btn">Load More</button>
+        </div>
+        <!-- rt_sidebar -->
+        <div class="rt_sidebar">
+            <div class="sidebar_title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+            <div class="event">
+                <div class="left_event">
+                    <h3>1</h3>
+                    <span>January</span>
+                </div>
+                <div class="rt_event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Georgian College</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left_event">
+                    <h3>14</h3>
+                    <span>April</span>
+                </div>
+                <div class="rt_event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Georgian College</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+            <div class="sidebar_title">
+                <h4>Advertisement</h4>
+                <a href="#">Close</a>
+            </div>
+            <img src="images/advertisement.png" alt="advertisement" class="sidebar_ads">
+            <div class="sidebar_title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+            <div class="online_list">
+                <div class="online">
+                    <img src="images/member-1.png" alt="m1">
+                </div>
+                <p>Maria Allison</p>
+            </div>
+            <div class="online_list">
+                <div class="online">
+                    <img src="images/member-2.png" alt="m1">
+                </div>
+                <p>Jerry Scott</p>
+            </div>
+            <div class="online_list">
+                <div class="online">
+                    <img src="images/member-3.png" alt="m1">
+                </div>
+                <p>Elena Salvatore</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright 2023- sukhpreet saini</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
